@@ -3,7 +3,23 @@ from contextlib import contextmanager
 from pathlib import Path
 
 
-DATABASE_PATH = Path(__file__).resolve().parent / "talents.db"
+import os
+
+
+def get_database_path():
+    if "DATABASE_PATH" in os.environ:
+        return Path(os.environ["DATABASE_PATH"])
+    default_path = Path(__file__).resolve().parent / "talents.db"
+    try:
+        test_file = Path(__file__).resolve().parent / ".write_test"
+        test_file.touch()
+        test_file.unlink()
+        return default_path
+    except OSError:
+        return Path("/tmp/talents.db")
+
+
+DATABASE_PATH = get_database_path()
 
 
 @contextmanager

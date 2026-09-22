@@ -19,6 +19,14 @@ The forgot-password page validates the email and checks whether an account exist
 
 `main.py` contains routes and validation, `database.py` manages SQLite, `templates/` contains the pages, and `static/style.css` contains styling. `base.html` shares the layout across pages.
 
-Sessions use signed cookies. By default, restarting the server signs everyone out. Set the `SESSION_SECRET` environment variable to a long random value to keep sessions across restarts. This project is intended for local learning.
-# talents_unlocked
-# talents_unlocked
+## Deploy to Netlify
+
+This project is configured to run on Netlify using Netlify Functions (Python ASGI serverless via Mangum).
+
+1. Connect your repository (`https://github.com/myra-rgb/talents_unlocked.git`) in Netlify.
+2. Netlify will automatically detect the settings in [netlify.toml](netlify.toml):
+   - **Build command**: `mkdir -p public && cp -r static public/`
+   - **Publish directory**: `public`
+   - **Functions directory**: `netlify/functions`
+3. Click **Deploy Site**.
+
