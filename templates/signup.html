@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+<p class="eyebrow">LET'S GET STARTED</p>
+<h2>Create your account</h2>
+<p class="subtitle">Your next chapter starts right here.</p>
+{% if error %}<p class="notice error" role="alert">{{ error }}</p>{% endif %}
+<form action="/signup" method="post">
+    <label for="name">Name</label>
+    <input id="name" name="name" autocomplete="name" placeholder="Your name" value="{{ name or '' }}" required>
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" value="{{ email or '' }}" required>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="new-password" minlength="6" aria-describedby="password-help" placeholder="Create a password" required>
+    <p class="field-help" id="password-help">Use at least 6 characters.</p>
+    <button type="submit">Sign Up <span aria-hidden="true">↗</span></button>
+</form>
+<p class="switch-page">Already have an account? <a href="/login">Log In</a></p>
+{% endblock %}

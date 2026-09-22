@@ -21,3 +21,4 @@ The forgot-password page validates the email and checks whether an account exist
 
 Sessions use signed cookies. By default, restarting the server signs everyone out. Set the `SESSION_SECRET` environment variable to a long random value to keep sessions across restarts. This project is intended for local learning.
 # talents_unlocked
+# talents_unlocked

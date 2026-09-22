@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} · Talents Unlocked</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">↗</span> Talents Unlocked<span class="brand-dot">.</span></a>
+    </header>
+    <main class="layout">
+        <section class="form-panel">
+            <div class="form-content">
+                {% block content %}{% endblock %}
+            </div>
+        </section>
+    </main>
+    <footer>Talents Unlocked</footer>
+</body>
+</html>
