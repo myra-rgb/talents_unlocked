@@ -40,26 +40,14 @@ a:hover { text-decoration-thickness: 2px; }
 .brand {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
     color: var(--ink);
     text-decoration: none;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 750;
     letter-spacing: -.7px;
 }
 
-.brand-mark {
-    display: inline-grid;
-    place-items: center;
-    width: 34px;
-    height: 38px;
-    background: var(--blue);
-    color: white;
-    border-radius: 16px 16px 3px 3px;
-    font-size: 15px;
-}
-
-.brand-dot { color: var(--blue); margin-left: -10px; }
+.brand-dot { color: var(--blue); }
 
 .layout {
     width: 100%;
