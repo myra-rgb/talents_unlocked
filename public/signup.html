@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up · Talents Unlocked</title>
+    <link rel="stylesheet" href="/style.css?v=3">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">Talents Unlocked<span class="brand-dot">.</span></a>
+    </header>
+    <main class="layout">
+        <section class="form-panel">
+            <div class="form-content">
+                <p class="eyebrow">LET'S GET STARTED</p>
+                <h2>Create your account</h2>
+                <p class="subtitle">Your next chapter starts right here.</p>
+                <div id="notice-box"></div>
+                <form id="signup-form">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" autocomplete="name" placeholder="Your name" required>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="new-password" minlength="6" aria-describedby="password-help" placeholder="Create a password" required>
+                    <p class="field-help" id="password-help">Use at least 6 characters.</p>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p class="switch-page">Already have an account? <a href="/login.html">Log In</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>Talents Unlocked</footer>
+    <script src="/app.js"></script>
+</body>
+</html>

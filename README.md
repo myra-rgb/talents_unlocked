@@ -21,12 +21,10 @@ The forgot-password page validates the email and checks whether an account exist
 
 ## Deploy to Netlify
 
-This project is configured to run on Netlify using Netlify Functions (Python ASGI serverless via Mangum).
+This project is configured to deploy directly to Netlify as a high-speed web application.
 
 1. Connect your repository (`https://github.com/myra-rgb/talents_unlocked.git`) in Netlify.
 2. Netlify will automatically detect the settings in [netlify.toml](netlify.toml):
-   - **Build command**: `mkdir -p public && cp -r static public/`
    - **Publish directory**: `public`
-   - **Functions directory**: `netlify/functions`
-3. Click **Deploy Site**.
+3. Click **Deploy Site**. All pages (`/`, `/signup`, `/login`, `/dashboard`, `/forgot-password`) will load instantly without server setup.
 

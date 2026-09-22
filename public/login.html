@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In · Talents Unlocked</title>
+    <link rel="stylesheet" href="/style.css?v=3">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/">Talents Unlocked<span class="brand-dot">.</span></a>
+    </header>
+    <main class="layout">
+        <section class="form-panel">
+            <div class="form-content">
+                <p class="eyebrow">GOOD TO SEE YOU</p>
+                <h2>Pick up where you left off.</h2>
+                <p class="subtitle">Log in to your Talents Unlocked account.</p>
+                <div id="notice-box"></div>
+                <form id="login-form">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required>
+                    <div class="forgot-link"><a href="/forgot-password.html">Forgot Password?</a></div>
+                    <button type="submit">Log In</button>
+                </form>
+                <p class="switch-page">New here? <a href="/signup.html">Sign Up</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>Talents Unlocked</footer>
+    <script src="/app.js"></script>
+</body>
+</html>

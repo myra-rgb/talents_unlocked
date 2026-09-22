@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=/signup.html">
+    <title>Talents Unlocked</title>
+    <script>
+        const user = localStorage.getItem('talents_current_user');
+        window.location.replace(user ? '/dashboard.html' : '/signup.html');
+    </script>
+</head>
+<body>
+</body>
+</html>
